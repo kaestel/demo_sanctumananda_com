@@ -2,9 +2,8 @@
 
 // File download (From public files only)
 $file_name = basename($_SERVER['REQUEST_URI']);
-$local_path = $_SERVER['DOCUMENT_ROOT'];
 
-$file = $local_path."/img/desktop/showcase/".$file_name;
+$file = $_SERVER["LOCAL_PATH"]."/www/img/desktop/showcase/".$file_name;
 print($file);
 if(file_exists($file)) {
 

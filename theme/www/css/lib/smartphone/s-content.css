@@ -1,0 +1,338 @@
+#content {position: relative;}
+#content .scene {
+	position: 
+	relative; 
+	padding: 0;
+	overflow-x: hidden;
+
+	/* Hide fixed footer footer */
+	background: #ffffff;
+}
+
+
+/* BASIC CONTENT */
+#content .scene p {color: #333333;}
+#content .scene p.quote {font-family: "Taviraj SemiBold Italic"; font-size: 15px; font-weight: 600; font-style: italic; color: #b8b28f;}
+#content .scene a {color: #b8b28f;}
+#content .scene h3 {font-size: 18px; color: #333333; text-transform: uppercase;}
+#content .scene span {font-style: italic;}
+
+
+/* GENERAL SLIDESHOW */
+#content div.slideshow {position: relative; width: 100%;}
+
+#content div.slideshow.loading {
+	background: black;
+}
+
+#content div.slideshow ul.slideshow {padding: 0; position: relative; overflow: hidden;}
+#content div.slideshow ul.slideshow li {position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+#content div.slideshow ul.slideshow li.i1 {}
+#content div.slideshow ul.slideshow li.i2 {}
+#content div.slideshow ul.slideshow li.i3 {}
+#content div.slideshow ul.slideshow li.i4 {}
+
+#content div.slideshow div.prev {position: absolute; top: 50%; transform: translateY(-50%); left: 12px; width: 35px; height: 50px;
+	background: url("/img/slideshow/arrow-left.png") center center no-repeat;
+	background-size: 18px;
+}
+#content div.slideshow div.next {position: absolute; top: 50%; transform: translateY(-50%); right: 12px; width: 35px; height: 50px;
+	background: url("/img/slideshow/arrow-right.png") center center no-repeat;
+	background-size: 18px;
+}
+
+#content div.slideshow ul.index {
+	font-size: 0; 
+	text-align: center;
+}
+#content div.slideshow ul.index li {width: 13px; height: 20px; display: inline-block; vertical-align: top; margin: 4px; border-radius: 10px; 
+	background: url("/img/slideshow/circle.png") center center no-repeat;
+	background-size: contain;
+}
+#content div.slideshow ul.index li.selected {
+	background: url("/img/slideshow/circle-select.png") center center no-repeat;
+	background-size: contain;
+}
+
+#content div.slideshow .turn {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: -14px;
+
+
+	width: 96px;
+	height: 96px;
+	background: url("/img/smartphone/turn.png") no-repeat center center;
+	background-size: contain;
+
+	animation: wiggle 4s infinite;
+}
+
+/* SLIDESHOW SHOWCASE */
+#content div.slideshow ul.showcase {}
+#content div.slideshow ul.showcase ~ ul.index {}
+#content div.slideshow ul.showcase ~ .next, 
+#content div.slideshow ul.showcase ~ .prev {margin-top: -14px;}
+
+
+
+/* SHOWCASE FULLSCREEN */
+#content div.slideshow.fullscreen {
+	z-index: 100;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	background: url("/img/darkpattern.png") repeat;
+
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+#content div.slideshow.fullscreen ul.showcase ~ .prev,
+#content div.slideshow.fullscreen ul.showcase ~.next {margin-top: 0; background-size: 25px;}
+#content div.slideshow.fullscreen > ul.index {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+#content div.slideshow.fullscreen > ul.index li {width: 14px;}
+
+/* SLIDESHOW PLANS */
+#content div.slideshow ul.plans {}
+#content div.slideshow ul.plans ~ .prev,
+#content div.slideshow ul.plans ~ .next {margin-top: -30px;}
+#content div.slideshow ul.plans ~ ul.index {padding-top: 30px;}
+
+
+/* GENERAL SANCTUM ANANADA */
+#content .scene .section {
+	margin-bottom: 50px;
+}
+
+/* TEXT SECTIONS */
+#content .scene .container {
+	position: relative; 
+	width: 90%; 
+	margin: 0 auto; 
+	font-size: 0; 
+	margin-bottom: 50px; 
+
+	transition: all 0.5s ease;
+
+	transform: translateY(50px); 
+	opacity: 0;
+}
+#content .scene .container.visible {transform: translateY(0); opacity: 1;}
+
+#content .scene .container a,
+#content .scene .container h1,
+#content .scene .container h2,
+#content .scene .container h3,
+#content .scene .container h4,
+#content .scene .container h5,
+#content .scene .container h6,
+#content .scene .container p {padding-left: 20px; padding-right: 20px; padding-bottom: 20px;}
+
+#content .scene .container h3 {padding-top: 20px; padding-bottom: 5px;}
+
+/* FRAME BASE */
+#content .scene div.frame {
+	z-index: 10;
+	position: absolute;
+	margin: 0 auto;
+
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+#content .scene div.frame::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 5px;
+	left: 5px;
+	background: transparent;
+	border: 1px solid #b8b28f;
+	position: absolute;
+	z-index: -1;
+}
+#content .scene div.frame::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: -5px;
+	left: -5px;
+	background: transparent;
+	border: 1px solid #b8b28f;
+	position: absolute;
+	z-index: -1;
+}
+
+/* DOBBL */
+#content .scene .dobbl {
+	transform: translateY(150px); 
+	opacity: 0;  
+}
+
+#content .scene .container.dobbl .c50 {position: relative; height: 50%;}
+
+#content .scene .container.dobbl .c50 p {font-size: 15px;}
+#content .scene .container.dobbl .c50 h3 {font-size: 22px;}
+#content .scene .container.dobbl .c50 p,
+#content .scene .container.dobbl .c50 h3 {color: #ffffff; padding: 0 0 10px 0}
+
+#content .scene .container.dobbl .c50.text .frame .divider > img {width: 150px; margin: 0 auto; padding-bottom: 10px;}
+#content .scene .container.dobbl .c50.image > .map {opacity: 0; height: 100%; transition: opacity .5s ease;}
+
+/* LANDING */
+ul.info {
+	display: none;
+}
+
+#content #landing {
+	text-align: center;
+	position: relative;
+}
+
+#content #landing .cover {
+	position: absolute;
+	left: 0;
+	top: 0;
+	
+	height: 100%;
+	overflow: hidden;
+}
+
+#content #landing .cover .zoom {
+	width: 100%;
+	height: 100%;
+	
+	animation: zoom 220s infinite;
+}
+
+#content #landing div.frame {
+	width: 85%;
+	height: 70%;
+
+	top: 43%;
+
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+
+#content #landing h1,
+#content #landing h2,
+#content #landing p {color: #ffffff; text-align: center; width: 100%; padding: 0;}
+
+#content #landing h1 {font-size: 30px; text-transform: uppercase;}
+
+#content #landing h2 {font-size: 24px; color: #b8b28f;}
+
+#content #landing p {font-size: 14px; text-transform: uppercase;}
+
+#content #landing a.mail {
+	font-size: 17px; 
+	text-decoration: underline; 
+	text-transform: uppercase;
+	width: 100%;
+
+	transition: all 0.2s ease-in-out;
+}
+
+#content #landing a.mail:hover {
+	color: #ffffff;
+}
+
+#content #landing .landing-arrow {position: absolute; left: 50%; transform: translateX(-50%); bottom: 5%; width: 50px; height: 50px;}
+#content #landing .landing-arrow img {
+	margin: 0 auto;
+	animation: arrow 2s ease-in-out infinite;
+}
+
+/* CONCEPT */
+#content #concept .container.dobbl .c50.text {
+	width: 100%;
+	text-align: center;
+}
+
+#content #concept .container.dobbl .c50 .frame {
+	/* overwrite for smartphone version */
+	width: 90%; 
+	display: block;
+	position: static;
+	transform: none;
+	margin: 0 auto;
+	padding: 40px 10px;
+}
+#content #concept .container.dobbl .c50 .frame::before,
+#content #concept .container.dobbl .c50 .frame::after {display: none;}
+
+#content #concept .container.dobbl .c50 ul.locations {
+	padding: 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+#content #concept .container.dobbl .c50 ul.locations li {
+	display: block;
+	padding-bottom: 2px;
+	color: #b8b28f;
+	font-size: 15px;
+}
+
+#content #concept .container.dobbl .image {}
+
+/* OWNERSHIP */
+
+/* CAPACITY */
+#content #capacity div.planbox {
+	width: 100%;
+	text-align: center;
+	padding: 40px 0;
+
+	background: url("/img/lightpattern.png");
+}
+#content #capacity div.planbox h3 {color: #b8b28f; padding-bottom: 20px;}
+#content #capacity div.planbox p {padding: 20px 50px;}
+#content #capacity div.planbox img {margin: 0 auto; width: 160px;}
+
+/* ACCESS */
+#content #access .container.dobbl {overflow: hidden;}
+
+#content #access .container.dobbl .frame {
+	width: 80%;
+	height: 70%;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 30px;
+	justify-content: center;
+}
+
+#content #access .container.dobbl .c50.text {z-index: 10;}
+
+#content #access .container.dobbl .image {}
+
+/* MONEY */
+#content #money {margin-bottom: 0;}
+
+#content #money .container {padding-top: 50px; padding-bottom: 50px; margin-bottom: 0;}
+
+/* last impression */
+#content #bottom {margin: 0; font-size: 0; border: 0;}
+#content #bottom img {width: 100%; height: 100%;}

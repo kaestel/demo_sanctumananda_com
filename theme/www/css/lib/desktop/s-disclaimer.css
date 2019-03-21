@@ -1,0 +1,24 @@
+#disclaimer {
+	z-index: 1000; 
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%; 
+	height: 100%; 
+	background: #ffffff; 
+}
+#disclaimer.visible {display: flex;}
+
+
+#disclaimer .wrapper {align-self: center; position: relative; width: 100%; max-width: 1440px; min-width: 600px; margin: 0 auto; font-size: 0;}
+#disclaimer .wrapper .content {position: relative; width: 70%; margin: 0 auto; font-size: 0; padding-top: 100px}
+
+#disclaimer .wrapper .left {display: inline-block; width: 40%; vertical-align: top; text-align: right; box-sizing: border-box; padding-right: 30px}
+#disclaimer .wrapper .right {display: inline-block; width: 60%; vertical-align: top; text-align: left; box-sizing: border-box; padding-left: 30px;}
+
+#disclaimer .wrapper h1 {font-size: 28px; text-transform: uppercase; color: #333333;}
+#disclaimer .wrapper h2 {font-size: 21px; font-weight: 600; color: #333333; padding-bottom: 26px;}
+
+#disclaimer .wrapper .close {position: absolute; top: 0; right: 0; width: 40px; height: 40px; margin-top: 25px; background: url("/img/close.png") no-repeat center center;}
+#disclaimer .wrapper .close:hover {cursor: pointer;}

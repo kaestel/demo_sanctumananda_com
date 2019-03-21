@@ -1,0 +1,59 @@
+/* NAViGATION */
+#navigation {
+	display: none;
+	opacity: 0;
+
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	background: url("/img/darkpattern.png");
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+#navigation .table {display: table; width: 100%; min-height: 100%;}
+#navigation .table .cell {display: table-cell; vertical-align: middle;}
+
+#navigation ul {
+	text-align: center;
+	padding: 20px 0;
+}
+#navigation ul li {display: block; padding: 20px 15px 20px 15px; font-size: 20px; color: #ffffff;
+	font-family: 'Taviraj Light'; text-decoration: none; text-transform: uppercase;
+}
+
+#navigation ul li a.current {color: #b8b28f;}
+
+
+/* FOOTER */
+#footer {
+	text-align: center; 
+
+	/* Make scrollable */
+	width: 100%;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+}
+#footer p {font-family: 'Taviraj Light'; color: #a8a8a8; padding-bottom: 10px;}
+
+#footer .container {
+	height: 400px;
+	background: url('/img/darkpattern.png');
+
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+#footer .container .mail {display: inline-block;}
+#footer .container .mail p {text-transform: uppercase; color: #fff;}
+#footer .container .mail a {text-transform: uppercase; font-family: 'Taviraj Light'; font-size: 17px; color: #b8b28f; text-decoration: underline; 
+	transition: all 0.2s ease-in-out;
+}
+#footer .container .mail a:hover {
+	color: #ffffff;
+}
+
+#footer p.copyright {padding: 15px;}
+#footer p.copyright > a {text-decoration: underline;}

@@ -1,0 +1,66 @@
+/* NAViGATION */
+#navigation {z-index: 100; width: 100%; text-align: center; position: fixed; top: 0; left: 0; background: transparent; transition: background 0.4s ease;};
+#navigation div.wrapper {position: relative; min-width: 600px; max-width: 1440px; margin: 0 auto; font-size: 0;}
+
+#navigation .logo {
+	min-width: 243px;
+	min-height: 60px;
+	display: inline-block;
+	margin: 10px 50px 10px 50px;
+}
+
+#navigation ul {display: flex; flex-direction: row; justify-content: center; align-items: center;}
+#navigation ul li {display: inline-block; vertical-align: top; padding: 0 12px 0 12px; font-size: 15px; color: #ffffff;
+	font-family: 'Taviraj Light'; text-decoration: none; text-transform: uppercase;
+}
+#navigation ul li:hover a {color: #b8b28f; transition: color .2s ease-in-out;}
+
+#navigation ul li a.current {color: #b8b28f; transition: color .2s ease-in-out;}
+
+/* NAV STICKY */
+#navigation.sticky {background: #ffffff;}
+#navigation.sticky ul li {color: #333333;}
+
+/* NAV MEDIA QUERIES */
+@media only screen and (max-width: 900px) {
+	#navigation .logo {display: none;}
+	#navigation ul {padding: 30px 0 30px 0;}
+	#navigation ul li.contact {padding-right: 5px;}
+}
+
+/* FOOTER */
+#footer {
+	text-align: center; 
+	width: 100%;
+	min-width: 600px;
+	margin: 0 auto;
+
+	/* Make scrollable */
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
+	z-index: -1;
+}
+#footer p {font-family: 'Taviraj Light'; font-size: 14px; padding: 5px; color: #a8a8a8;}
+
+#footer .container {
+	height: 453px;
+	background: url('/img/darkpattern.png');
+
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+#footer .container .mail {display: inline-block;}
+#footer .container .mail p {text-transform: uppercase; color: #fff;}
+#footer .container .mail a {text-transform: uppercase; font-family: 'Taviraj Light'; font-size: 20pt; color: #b8b28f; text-decoration: underline; 
+	transition: all 0.2s ease-in-out;
+}
+#footer .container .mail a:hover {
+	color: #ffffff;
+}
+
+#footer p.copyright {padding: 20px;}
+#footer p.copyright > a {text-decoration: underline;}
+

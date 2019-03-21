@@ -1,0 +1,30 @@
+@font-face {
+	font-family: 'Taviraj Light';
+	src: url('/css/fonts/taviraj-light-webfont.woff2') format('woff2'),
+			url('/css/fonts/taviraj-light-webfont.woff') format('woff'),
+			url('/css/fonts/taviraj-light-webfont.ttf') format('truetype'),
+			url('/css/fonts/taviraj-light-webfont.svg#taviraj_lightregular') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Taviraj Medium Italic';
+	src: url('/css/fonts/taviraj-mediumitalic-webfont.woff2') format('woff2'),
+			url('/css/fonts/taviraj-mediumitalic-webfont.woff') format('woff'),
+			url('/css/fonts/taviraj-mediumitalic-webfont.ttf') format('truetype'),
+			url('/css/fonts/taviraj-mediumitalic-webfont.svg#taviraj_mediumitalic') format('svg');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Taviraj SemiBold Italic';
+	src: url('/css/fonts/taviraj-semibolditalic-webfont.woff2') format('woff2'),
+			url('/css/fonts/taviraj-semibolditalic-webfont.woff') format('woff'),
+			url('/css/fonts/taviraj-semibolditalic-webfont.ttf') format('truetype'),
+			url('/css/fonts/taviraj-semibolditalic-webfont.svg#taviraj_semibolditalic') format('svg');
+	font-weight: 600;
+	font-style: italic;
+}

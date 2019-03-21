@@ -1,0 +1,21 @@
+#disclaimer {
+	z-index: 1000; 
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%; 
+	height: 100%; 
+	background: #ffffff; 
+}
+#disclaimer.visible {display: flex;}
+
+
+#disclaimer .wrapper {align-self: center; position: relative; max-height: 100%; margin: 0 auto; font-size: 0;}
+#disclaimer .wrapper .left {display: inline-block; width: 100%; vertical-align: top; text-align: center; box-sizing: border-box; padding-top: 100px;}
+#disclaimer .wrapper .right {display: inline-block; width: 100%; vertical-align: top; text-align: center; box-sizing: border-box; padding: 50px;}
+
+#disclaimer .wrapper h1 {font-size: 28px; text-transform: uppercase; color: #333333;}
+#disclaimer .wrapper h2 {font-size: 21px; font-weight: 600; color: #333333; padding-bottom: 26px;}
+
+#disclaimer .wrapper .close {position: absolute; top: 0; right: 0; width: 40px; height: 40px; margin: 25px 50px 0 0; background: url("/img/close.png") no-repeat center center;}
